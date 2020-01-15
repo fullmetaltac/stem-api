@@ -7,7 +7,7 @@ app = Flask(__name__)
 def switch():
     port = request.json['port']
     #TODO add port switch with accroname
-    return req_data
+    return port
 
 
 if __name__ == '__main__':
