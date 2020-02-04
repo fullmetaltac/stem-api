@@ -4,26 +4,26 @@
 # Run as a service
 `sudo nano /etc/init/flask.conf`
 
-`description "flask"
-start on stopped rc RUNLEVEL=[2345]
-respawn
-exec /usr/bin/python3 /home/pi/stem-api/app.py`
+description "flask" <br />
+start on stopped rc RUNLEVEL=[2345] <br />
+respawn <br />
+exec /usr/bin/python3 /home/pi/stem-api/app.py <br />
 
 `sudo nano /lib/systemd/system/flask.service`
 
-`[Unit]
-Description=Flask web server
+[Unit] <br />
+Description=Flask web server <br /> <br />
 
-[Install]
-WantedBy=multi-user.target
+[Install] <br />
+WantedBy=multi-user.target <br /> <br />
 
-[Service]
-User=pi
-PermissionsStartOnly=true
-ExecStart=/home/pi/stem-api/app.py
-TimeoutSec=600
-Restart=on-failure
-RuntimeDirectoryMode=755`
+[Service] <br />
+User=pi <br />
+PermissionsStartOnly=true <br />
+ExecStart=/home/pi/stem-api/app.py <br />
+TimeoutSec=600 <br />
+Restart=on-failure <br />
+RuntimeDirectoryMode=755 <br />
 
 `chown pi /home/pi/stem-api/app.py` 
 `chmod +x /home/pi/stem-api/app.py`
