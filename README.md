@@ -13,10 +13,8 @@ exec /usr/bin/python3 /home/pi/stem-api/app.py <br />
 
 [Unit] <br />
 Description=Flask web server <br /> <br />
-
 [Install] <br />
 WantedBy=multi-user.target <br /> <br />
-
 [Service] <br />
 User=pi <br />
 PermissionsStartOnly=true <br />
