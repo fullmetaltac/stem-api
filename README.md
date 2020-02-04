@@ -12,9 +12,9 @@ exec /usr/bin/python3 /home/pi/stem-api/app.py <br />
 `sudo nano /lib/systemd/system/flask.service`
 
 [Unit] <br />
-Description=Flask web server <br /> <br />
+Description=Flask web server <br />
 [Install] <br />
-WantedBy=multi-user.target <br /> <br />
+WantedBy=multi-user.target <br />
 [Service] <br />
 User=pi <br />
 PermissionsStartOnly=true <br />
