@@ -13,6 +13,7 @@ def switch():
     usbc_switch = brainstem.stem.USBCSwitch()
     result = usbc_switch.discoverAndConnect(brainstem.link.Spec.USB, id)
     usbc_switch.mux.setChannel(port)
+    usbc_switch.disconnect()
 
     return f'{result == 0}'
 
