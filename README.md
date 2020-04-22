@@ -1,3 +1,6 @@
+### Install braistem
+1)Download acroname dev kit https://acroname.com/software/brainstem-development-kit
+1) Install `pip3 install python/brainstem-2.7.12-py2.py3-none-any.whl `
 # Docker run
 `docker build -t stem . && docker run -dit --restart unless-stopped -p 5000:5000 stem`
 
